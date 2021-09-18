@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/slick-1.8.1/slick/slick-theme.css"/>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <a href="./index.html" class="header__icon">
+                <img class="header__icon-img" src="./assets/img/luxstay_icon.png" alt="luxstay_icon">
+            </a href="./index.html">
+            <div class="header__search">
+                <div class="header__search-bar">
+                    <i class="header__search-bar-icon fas fa-search"></i>
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                </div>
+                <div class="header__search-calendar">
+                    <i class="header__search-calendar-icon far fa-calendar"></i>
+                    <h6 class="header__search-calendar-text">Ngày<h6>
+
+                    <div class="search-calendar">
+                        
+                    </div>
+                </div>
+                <div class="header__search-quantity">
+                    <i class="header__search-user fas fa-user"></i>
+                    <a class="header__search-text">Số khách</a>
+
+                    <div class="quantity__choose">
+                        <ul class="quantity__list">
+                            <li class="quantity__item">
+                                <div class="quantity__item-ages">
+                                    <h4 class="quantity__item-text">Người lớn</h4>
+                                    <span class="quantity__item-ages-limit"></span>
+                                </div>
+                                <div class="quantity__item-choice">
+                                    <button class="quantity__item-btn quantity__item-btn---hidden quantity__item-btn-minus"></button>
+                                    <span class="quantity__item-amount">0</span>
+                                    <button class="quantity__item-btn quantity__item-btn-add"></button>
+                                </div>
+                            </li>
+                            <li class="quantity__item">
+                                <div class="quantity__item-ages">
+                                    <h4 class="quantity__item-text">Trẻ em</h4>
+                                    <span class="quantity__item-ages-limit">Tuổi từ 2-12</span>
+                                </div>
+                                <div class="quantity__item-choice">
+                                    <button class="quantity__item-btn quantity__item-btn---hidden quantity__item-btn-minus"></button>
+                                    <span class="quantity__item-amount">0</span>
+                                    <button class="quantity__item-btn quantity__item-btn-add"></button>
+                                </div>
+                            </li>
+                            <li class="quantity__item">
+                                <div class="quantity__item-ages">
+                                    <h4 class="quantity__item-text">Trẻ sơ sinh</h4>
+                                    <span class="quantity__item-ages-limit">Dưới 2 tuổi</span>
+                                </div>
+                                <div class="quantity__item-choice">
+                                    <button class="quantity__item-btn quantity__item-btn---hidden quantity__item-btn-minus"></button>
+                                    <span class="quantity__item-amount">0</span>
+                                    <button class="quantity__item-btn quantity__item-btn-add"></button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="quantity__footer">
+                            <span class="quantity__choose-delete">Xóa</span>
+                            <span class="quantity__choose-apply">Áp dụng</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="header__search-btn">
+                    <i class="header__search-btn-icon fas fa-search"></i>
+                </button>
+
+            </div>
+            <i class="bars fas fa-bars"></i>
+            <ul class="header__list">
+                <li class="header__list-item"><a href="" class="">Guide</a></li>
+                <li class="header__list-item header__list-item--host">
+                    <a href="" class="">
+                        Host
+                        <div class=""></div>
+                    </a>
+                </li>
+                <li class="header__list-item"><a href="./login.html" class="">Đăng ký</a></li>
+                <li class="header__list-item"><a href="./login.html" class="">Đăng nhập</a></li>
+                <button class="header__list-item-btn">
+                    <img data-v-0550aeae="" src="./assets/img/vn-icon.svg" width="24" height="24">
+                    <span class="header__list-item-btn-text">VND</span>
+                    <i class="header__list-item-btn-icon fas fa-sort-down"></i>
+
+                    <div class="btn__setting btn__setting--active">
+                        <div class="col-2 bar">
+                            <div class="row-3">
+                                <div class="btn__setting-national">
+                                    <div class="setting__language">
+                                        <img class="setting__language-img" src="./assets/img/vn-icon.svg" alt="">
+                                        <h5 class="setting__language-text">Tiếng Việt</h5> 
+                                        <i class="setting-icon fas fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-3">
+                                <div class="btn__setting-national">
+                                    <div class="setting__language">
+                                        <img class="setting__language-img" src="./assets/img/en-icon.svg" alt="">
+                                        <h5 class="setting__language-text">English</h5> 
+                                    </div>
+                                    
+                                </div>  
+                            </div>
+                            <div class="row-3">
+                                <div class="btn__setting-national">
+                                    <div class="setting__language">
+                                        <img class="setting__language-img" src="./assets/img/ko-icon.svg" alt="">
+                                        <h5 class="setting__language-text">Korean</h5> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                           <div class="row-3">
+                                <div class="setting__currency">
+                                    <h3 class="setting__currency-national">VND</h3>
+                                    <h5 class="setting__currency-text">Việt Nam Đồng</h5>
+                                    <i class="setting-icon fas fa-check"></i>
+                                </div>
+                           </div>
+                            <div class="row-3">
+                                <div class="setting__currency">
+                                    <h3 class="setting__currency-national">USD</h3>
+                                    <h5 class="setting__currency-text">United States Dollar</h5>
+                                </div>
+                            </div>
+                            <div class="row-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="container__header">
+                <div class="container__header-list">
+                    <div class="block-btn"><button class="container__header-btn container__header-btn--option">Hủy phòng linh hoạt</button></div>
+                    <div class="block-btn"><button class="container__header-btn container__header-btn--option">Đặt phòng nhanh</button></div>
+                    <div class="block-btn"><button class="container__header-btn container__header-btn--option">Giá ưu đãi</button></div>
+                    <div class="block-btn area">
+                        <button class="container__header-btn container__header-btn--area">Khu vực</button>
+                        <div class="popover area__popover display--none">
+                            <ul class="popover__list">
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 1</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 2</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 3</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 4</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 5</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 6</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 7</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 8</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 9</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 10</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 11</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường 12</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường Nguyễn An Ninh</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường Rạch Dừa</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường Thắng Nhất</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường Thắng Nhì   </li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Phường Thắng Tam</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--area"></button> Xã Long Sơn</li>
+                            </ul>
+                            <div class="popover-footer">
+                                <span class="popover-footer-delete">Xóa</span>
+                                <button class="popover-footer-apply">Áp dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-btn category">
+                        <button class="container__header-btn container__header-btn--category">Loại phòng</button>
+                        <div class="popover category__popover display--none">
+                            <ul class="popover__list">
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Homstay</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Biệt thự</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Nhà riêng</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Chung cư</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Studio</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Căn hộ dịch vụ</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Nhà tập thể</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Nhà sàn</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Farmstay</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Khách sạn căn hộ</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Căn hộ penthouse</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Biệt thự trên không</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Khu nghĩ dưỡng</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Hostel</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Nhà nghĩ</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Nhà trọ   </li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> container</li>
+                                <li class="popover__item"> <button class="popover__item-btn popover__item-btn--category"></button> Ngoài trời</li>
+                            </ul>
+                            <div class="popover-footer">
+                                <span class="popover-footer-delete">Xóa</span>
+                                <button class="popover-footer-apply">Áp dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-btn price">
+                        <button class="container__header-btn container__header-btn--price">Giá chỗ ở</button>
+                        <div class="price__popover display--none">
+                            <div class="popover-price__container">
+                                <h4 class="price__heading"> Giá phòng (1 đêm)</h4>
+                                <div class="price__slider">
+                                    <div class="price__slider-btn">
+                                        <div class="price__slider--hover">
+                                            0
+                                        </div>
+                                    </div>
+                                    <div class="price__slider-bar"></div>
+                                    <div class="price__slider-btn">
+                                        <div class="price__slider--hover">
+                                            50000000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__change">
+                                    <div class="price__input price__low">
+                                        <p class="price__input-text">Thấp nhất</p>
+                                        <span class="price__input-price">Đ 0</span>
+                                    </div>
+                                    <div class="price__input price__high">
+                                        <p class="price__input-text">Thấp nhất</p>
+                                        <span class="price__input-price">Đ 50000000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popover-footer">
+                                <span class="popover-footer-delete">Xóa</span>
+                                <button class="popover-footer-apply">Áp dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-btn filter">
+                        <button class="container__header-btn container__header-btn--filter">Thêm bộ lọc</button>
+                        <div class="filter__popover display--none">
+                            <div class="filter__popover-list">
+                                <div class="filter__popover-room">
+                                    <h3 class="filter__popover-heading">Phòng và giường ngủ</h3>
+                                    <div class="room">
+                                        <div class="room-item">
+                                            <span class="room-item__name">Giường</span>
+                                            <div class="room-item__choice">
+                                                <button class="room-item__btn room-item__btn--left">&#8722</button>
+                                                <span class="room-item__quantity">0</span>
+                                                <button class="room-item__btn room-item__btn--right">&#43</button>
+                                            </div>
+                                        </div>
+                                        <div class="room-item">
+                                            <span class="room-item__name">Phòng ngủ</span>
+                                            <div class="room-item__choice">
+                                                <button class="room-item__btn room-item__btn--left">&#8722</button>
+                                                <span class="room-item__quantity">0</span>
+                                                <button class="room-item__btn room-item__btn--right" >&#43</button>
+                                            </div>
+                                        </div>
+                                        <div class="room-item">
+                                            <span class="room-item__name">Phòng tắm</span>
+                                            <div class="room-item__choice">
+                                                <button class="room-item__btn room-item__btn--left">&#8722</button>
+                                                <span class="room-item__quantity">0</span>
+                                                <button class="room-item__btn room-item__btn--right">&#43</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__popover-utilities">
+                                    <h3 class="filter__popover-heading">Tiện ích chung</h3>
+                                    <div class="utilities-list">
+                                        <div class="col-2">
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Thang máy
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Phòng họp
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Lễ tân 24/24
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Bãi đỗ xe ngoài trời
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Bãi đỗ xe chung
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Thang bộ
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Khu vực đỗ rác
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Khu vực hút thuốc
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Bãi đỗ xe trong nhà
+                                            </div>
+                                            <div class="utilities-item">
+                                                <button class="utilities-btn"></button>
+                                                Bãi đỗ ô tô
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popover-footer">
+                                <span class="popover-footer-delete">Xóa</span>
+                                <button class="popover-footer-apply">Áp dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="container__header-text">
+                    <h5>Trước khi đặt phòng, hãy kiểm tra những địa điểm bị hạn chế du lịch trong thời gian này. </h5>
+                    Sức khỏe và sự an toàn của cộng đồng luôn được đặt hàng đầu. Vì vậy, vui lòng làm theo chỉ thị của chính phủ bởi điều đó thực sự cần thiết.
+                </span>
+            </div>
+            <div class="prominent">
+                <h3 class="h2-heading">Lựa chọn những homestay hoàn hảo tại các điểm đến được yêu thích nhất</h3>
+                <div class="prominent__list">
+                    <div class="prominent__list-list">
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/Hanoi.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Hà nội</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">2884</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/HCM.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">TP.Hồ Chí Minh</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">2294</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/VungTau.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Vũng Tàu</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">534</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/DaLat.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Đà Lạt</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">1471</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/DaNang.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Đà Nẵng</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">903</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/NhaTrang.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Nha Trang</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">629</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item">
+                            <img src="./assets/img/QuangNinh.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Quảng Ninh</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">221</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                        <a href="" class="prominent__item ">
+                            <img src="./assets/img/HoiAn.png" alt="" class="prominent__item-img col-5">
+                            <span class="prominent__item-name">Hội An</span>
+                            <div class="prominent__item-remaning">
+                                <span class="prominent__item-quantity">323</span>
+                                <span class="prominent__item-text">Chỗ ở</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                       
+            </div>
+            <div class="places">
+                <div class="prominent__col-2">
+                    <h1 class="places__heading">8108 homestay nổi bật tại Luxstay</h1>
+
+                    <div class="prominent-sort">
+                        <p class="sort-text">Sắp xếp: </p>
+                        <span class="sort-option">Lựa chọn</span>
+                        <span class="sort-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <div class="prominent__popover display--none">
+                            <span class="prominent__popover-text">Giá tăng dần</span>
+                            <span class="prominent__popover-text">Giá giảm dần</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__list">
+                    <div class="row places__list-list">
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/users/43544/c4xX2uCRoHWuNPacIjVxwHz8.jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.85</span></i>
+                                            <span class="des-quantity">(27)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A Cosy Apartment in @Vinhomes Greenbay @1 bedroom Ha Noi</span>
+                                    </div>
+                                    <div class="item__content-price">541.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16622/large/1541408261_1541234349_can_ho_7jpg9jpgjpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text"> A.502 STANDARD ROOM WITH TWIN BEDS</span>
+                                    </div>
+                                    <div class="item__content-price">521.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16598/large/1541142287_can_ho_7jpg8jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.501 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">491.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16664/large/1541235357_24331217_1746461658717531_645715910_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.6</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.302 STANDARD ROOM WITH WINDOW</span>
+                                    </div>
+                                    <div class="item__content-price">511.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16666/large/1541236601_24282120_1746466952050335_68494462_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.18</span></i>
+                                            <span class="des-quantity">(11)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.201 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">479.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row places__list-list">
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/users/43544/c4xX2uCRoHWuNPacIjVxwHz8.jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.85</span></i>
+                                            <span class="des-quantity">(27)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A Cosy Apartment in @Vinhomes Greenbay @1 bedroom Ha Noi</span>
+                                    </div>
+                                    <div class="item__content-price">541.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16622/large/1541408261_1541234349_can_ho_7jpg9jpgjpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text"> A.502 STANDARD ROOM WITH TWIN BEDS</span>
+                                    </div>
+                                    <div class="item__content-price">521.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16598/large/1541142287_can_ho_7jpg8jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.501 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">491.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16664/large/1541235357_24331217_1746461658717531_645715910_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.6</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.302 STANDARD ROOM WITH WINDOW</span>
+                                    </div>
+                                    <div class="item__content-price">511.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16666/large/1541236601_24282120_1746466952050335_68494462_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.18</span></i>
+                                            <span class="des-quantity">(11)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.201 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">479.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row places__list-list">
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/users/43544/c4xX2uCRoHWuNPacIjVxwHz8.jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.85</span></i>
+                                            <span class="des-quantity">(27)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A Cosy Apartment in @Vinhomes Greenbay @1 bedroom Ha Noi</span>
+                                    </div>
+                                    <div class="item__content-price">541.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16622/large/1541408261_1541234349_can_ho_7jpg9jpgjpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text"> A.502 STANDARD ROOM WITH TWIN BEDS</span>
+                                    </div>
+                                    <div class="item__content-price">521.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16598/large/1541142287_can_ho_7jpg8jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.501 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">491.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16664/large/1541235357_24331217_1746461658717531_645715910_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.6</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.302 STANDARD ROOM WITH WINDOW</span>
+                                    </div>
+                                    <div class="item__content-price">511.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16666/large/1541236601_24282120_1746466952050335_68494462_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.18</span></i>
+                                            <span class="des-quantity">(11)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.201 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">479.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row places__list-list">
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/users/43544/c4xX2uCRoHWuNPacIjVxwHz8.jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.85</span></i>
+                                            <span class="des-quantity">(27)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A Cosy Apartment in @Vinhomes Greenbay @1 bedroom Ha Noi</span>
+                                    </div>
+                                    <div class="item__content-price">541.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16622/large/1541408261_1541234349_can_ho_7jpg9jpgjpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text"> A.502 STANDARD ROOM WITH TWIN BEDS</span>
+                                    </div>
+                                    <div class="item__content-price">521.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16598/large/1541142287_can_ho_7jpg8jpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.7</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.501 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">491.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16664/large/1541235357_24331217_1746461658717531_645715910_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.6</span></i>
+                                            <span class="des-quantity">(10)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.302 STANDARD ROOM WITH WINDOW</span>
+                                    </div>
+                                    <div class="item__content-price">511.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="" class="places__list-item">
+                                <img class="item__img" src="https://cdn.luxstay.com/rooms/16666/large/1541236601_24282120_1746466952050335_68494462_njpg" alt="">
+                                <div class="item__content">
+                                    <div class="item__content-des">
+                                        <span class="des-infor">Studio - 1 phòng ngủ</span>
+                                        <div class="des-rated">
+                                            <i class="des-star fas fa-star"><span>4.18</span></i>
+                                            <span class="des-quantity">(11)</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__content-promo">
+                                        <img class="item__content-promo-img" src="./assets/img/promo-img.png" alt="">
+                                        <span class="item__content-promo-text">A.201 DELUXE ROOM WITH BALCONY</span>
+                                    </div>
+                                    <div class="item__content-price">479.000&#8363/Đêm</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="places__navbar">
+                    <div class="navbar">
+                        <button class="navbar__btn navbar__btn--left display--none">&#10094</button>
+                        <div class="navbar__number-list">
+                            <button class="navbar__page navbar__page--active">1</button>
+                            <button class="navbar__page">2</button>
+                            <button class="navbar__page">3</button>
+                            <button class="navbar__page">4</button>
+                            <button class="navbar__page">5</button>
+                            <button class="navbar__page">6</button>
+                        </div>
+                        <button class="navbar__page--all">30</button>
+                        <button class="navbar__btn navbar__btn--right">&#10095</button>
+                    </div>
+                    <span class="places__navbar-description">1 - 20 trong số 8108 chỗ ở</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer__text">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</p>
+            <p class="footer__text"> Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586</p>
+            <p class="footer__text">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</p>
+        </div>
+        <div class="modal display--none">
+            <div class="modal__header">
+                <ul class="header__list header__list--modal">
+                    <li class="header__list-item"><a href="" class="">Guide</a></li>
+                    <li class="header__list-item header__list-item--host">
+                        <a href="" class="">
+                            Host
+                            <div class=""></div>
+                        </a>
+                    </li>
+                    <a href="./login.html" class="header__list-item">Đăng ký</a>
+                    <a href="./login.html" class="header__list-item">Đăng nhập</a>
+                    <button class="header__list-item-btn ">
+                        <img data-v-0550aeae="" src="./assets/img/vn-icon.svg" width="24" height="24">
+                        <span class="header__list-item-btn-text">VND</span>
+                        <i class="header__list-item-btn-icon fas fa-sort-down"></i>
+        
+                        <div class="btn__setting btn__setting--modal btn__setting--active">
+                            <div class="btn__setting-national">
+                                <div class="setting__language">
+                                    <img class="setting__language-img" src="./assets/img/vn-icon.svg" alt="">
+                                    <h5 class="setting__language-text">Tiếng Việt</h5> 
+                                    <i class="setting-icon fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="btn__setting-national">
+                                <div class="setting__language">
+                                    <img class="setting__language-img" src="./assets/img/en-icon.svg" alt="">
+                                    <h5 class="setting__language-text">English</h5> 
+                                </div>
+                                
+                            </div> 
+                            <div class="btn__setting-national">
+                                <div class="setting__language">
+                                    <img class="setting__language-img" src="./assets/img/ko-icon.svg" alt="">
+                                    <h5 class="setting__language-text">Korean</h5> 
+                                </div>
+                            </div>
+                            <div class="setting__currency">
+                                <h3 class="setting__currency-national">VND</h3>
+                                <h5 class="setting__currency-text">Việt Nam Đồng</h5>
+                                <i class="setting-icon fas fa-check"></i>
+                            </div>
+                            <div class="setting__currency">
+                                <h3 class="setting__currency-national">USD</h3>
+                                <h5 class="setting__currency-text">United States Dollar</h5>
+                            </div>
+                            
+                        </div>
+                    </button>
+                </ul>
+                <i class="modal__close fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./assets/fonts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/fonts/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+        
+    </script>
+</body>
+</html>
